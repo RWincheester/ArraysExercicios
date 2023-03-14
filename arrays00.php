@@ -1,51 +1,26 @@
 <?php
 
-$horarios = [
- 
-    'joao' => [
-        'horario-chegada' => [8, 14],
-        'horario-saida'   => [12,18],
-    ],
-    'maria' => [
-        'horario-chegada' => [7, 13],
-        'horario-saida'   => [11, 17]
-    ]
-
+$horarios= [
+    "Maria" =>  ["chegada" => "07:00", "saida" => "17:00"],
+    "João"  =>  ["chegada" => "08:00", "saida" => "18:00"]
 ];
 
-// horarios de chegada e saida.
+$maria_chega = $horarios["Maria"]["chegada"];
+$maria_sai = $horarios["Maria"]["saida"];
+$joao_chega = $horarios["João"]["chegada"];
+$joao_sai = $horarios["João"]["saida"];
 
-$nome1 = 'joao chega as';
-$nome2 = 'maria chega as';
-$nome3 = 'joao sai as';
-$nome4 = 'maria sai as';
+$var1 = 'João chega ás';
+$var2 = 'Maria chega ás';
+$var3 = 'e sai ás';
 
 
-echo'<pre>';
+echo '<pre>';
 
-    echo $nome1, ':';
+echo "$var1 $joao_chega $var3 $joao_sai", '.';
 
-echo'<pre>';
+echo '<pre>';
 
-print_r($horarios['joao']['horario-chegada']);
-
-    echo $nome3, ':';
-
-echo'<pre>';
-
-print_r($horarios['joao']['horario-saida']);
-
-    echo $nome2, ':';
-
-echo'<pre>';
-
-print_r($horarios['maria']['horario-chegada']);
-
-    echo $nome4, ':';
-
-echo'<pre>';
-
-print_r($horarios['maria']['horario-saida']);
-
-   
+echo "$var2 $maria_chega $var3 $maria_sai", '.';
+ 
 ?>
